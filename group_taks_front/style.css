@@ -16,27 +16,31 @@ body {
 
 .banner-container
 {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .banner-img
 {
     height: 300px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
 .logo-container
 {
     grid-row: 1;
+    height: 55%;
+    width: 55%;
+    object-fit: cover;
     align-self: center;
 }
-.logo
+/* .logo
 {
-    font-size: 1.5rem;
     font-weight: bold;
-}
+} */
 
 header {
     position: sticky;
