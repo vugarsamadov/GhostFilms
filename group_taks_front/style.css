@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    /* border: 1px solid red ; */
+}
+
+body {
+    display: grid;
+    background-color: #0a1016;
+    
+    width: 90%;
+    margin: 0 5%;
+}
+
+.banner-container
+{
+    height: 300px;
+    width: 100%;
+    background-color: #000;
+}
+
+
+.logo-container
+{
+    grid-row: 1;
+    align-self: center;
+}
+.logo
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header {
+    position: sticky;
+    top: 0;    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: stretch;
+}
+
+.main-container
+{
+    width: 100%;
+}
+
+.search-bar-container {
+    grid-column: 2;
+    display: flex;
+    /* overflow: hidden; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    background-color: #202830;
+    border-radius: 0.3rem;
+}
+
+
+.searchbar {
+    border: none;
+    width: 100%;
+    background-color: #202830;
+    color: white;
+    padding: 10px;
+    outline: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    cursor: pointer;
+}
+
+
+.top-shows-section 
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    flex-wrap: nowrap;
+}
+.top-shows-section-header
+{
+    grid-row: 1;
+    color: white;
+}
+.card-slider-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card-slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: scroll;
+
+    padding: 40px;
+    grid-row: 2;
+    height: 300px;
+    width: auto; 
+}
+
+
+.card {
+    display: flex;
+    height: 268px;
+    max-height: 270px;
+    min-height: 255px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    transition: all .2s ease;
+    box-shadow: -0.5rem 0 1rem #000;
+}
+
+.card:not(:first-child) {
+    margin-left: -80px;
+}
+
+.card:hover {
+    transform: scale(120%);
+    transition: 0.2s ease-out;
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
