@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    /* border: 1px solid red ; */
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+.movie-details-container
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto 1fr;
+}
+
+.movie-details
+{
+    grid-column: 2;
+    align-self: center;
+}
+
+.movie-name
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.genres-container
+{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+    flex-wrap: wrap;
+    direction: row;
+}
+
+.genre
+{
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: #0f1725;
+    border: 2px solid #49505c;
+}
+
+.movie-thumbnail-container
+{
+    grid-column: 1;
+}
+
+.movie-thumbnail
+{
+    border-radius: 15px;
+    height: 300px;
+    width: auto; 
+}
+
+.synopsis-container
+{
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+.movie-smal-details-container
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.detailcard-container
+{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+}
+
+.detailcard
+{
+    display: flex;
+    border-radius: 1rem;
+    width: 212px;
+    height: 100%;
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.detailcard-thumbnail
+{
+    width: 212px;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+
+.deatilcard-details
+{
+    display: flex;
+    opacity: 0.9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 212px;
+    height: 25%;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+  

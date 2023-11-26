@@ -11,18 +11,36 @@
 </head>
 <header>
     <div class="header-container">
+        <a href="index.html">
             <img class="logo-container" src="ghosttitle.png">
+        </a>
         <div class="search-bar-container">
-            <input class="searchbar" placeholder="Search" type="text">
-            <i class="material-symbols-outlined">search</i>
+            <input  class="searchbar" placeholder="Search" type="text">
+            <i id="searchsubmit" class="material-symbols-outlined">search</i>
         </div>
     </div>
 </header>
 <body>
     <main>
         <div class="main-container">
-            <section class="banner-container">
-                <img class="banner-img" src="ghostdead.jpg">
+            <div id="search-section"class="invisible">
+                <h1 id="searchinfo"></h1>
+                <div class="searchresultarea" id="searchresultarea">
+                    <a class="card" href="https://google.com">
+                        <img  src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"></img>
+                    </a>
+                    <a class="search-card" href="https://google.com">
+                        <img  src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"></img>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div id="non-search-section">
+
+                <section class="banner-container">
+                    <img class="banner-img" src="ghostdead.png">
                 <!-- <img class="banner-img" src="ghostpoin.png">
                 <img class="banner-img" src="ghostrev.png">
                 <img class="banner-img" src="ghostsad.png"> -->
@@ -42,16 +60,17 @@
                 </div>
             </section>
             <section class="top-shows-section nowshows">
-                <h2 class="top-shows-section-header">Now Playin Shows</h2>
+                <h2 class="top-shows-section-header">Today's Shows</h2>
                 <div class="card-slider-container">
                     
                 </div>
             </section>
+        </div>
 
         </div>
     </main>
-
-<script src="app.js"></script>
+    
+    <script src="app.js"></script>
 </body>
 
 </html>
