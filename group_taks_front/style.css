@@ -16,11 +16,16 @@ body {
 
 .banner-container
 {
-    height: 300px;
-    width: 100%;
     background-color: #000;
 }
 
+.banner-img
+{
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 1rem;
+}
 
 .logo-container
 {
